@@ -11,18 +11,14 @@ body:
     id: bug-description
     attributes:
       label: Describe the bug
-      placeholder: A clear and concise description of what the bug is.
+      placeholder: A clear and concise description of what the bug is. How to reproduce it?
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: version
     attributes:
       label: Version
-      description: What version of the software are you using?
-      options:
-        - v1.0.0
-        - v2.0.0
-        - Beta
+      description: Which version of Expresii are you using?
     validations:
       required: true
   - type: checkboxes
@@ -32,3 +28,18 @@ body:
       options:
         - label: I have verified this bug exists on the latest version.
           required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Which version of Expresii are you using?
+    validations:
+      required: true
+  - type: textarea
+    id: systeminfo
+    attributes:
+      label: System Information
+      placeholder: Please provide information of your OS, GPU, GPU driver version. Tip: you can copy and paste the system information from the "System Info" dialog of Expresii here.
+    validations:
+      required: false    
+      
