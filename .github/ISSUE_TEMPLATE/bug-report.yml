@@ -28,18 +28,11 @@ body:
       options:
         - label: I have verified this bug exists on the latest version.
           required: true
-  - type: input
-    id: version
-    attributes:
-      label: Version
-      description: Which version of Expresii are you using?
-    validations:
-      required: true
   - type: textarea
     id: systeminfo
     attributes:
       label: System Information
-      placeholder: Please provide information of your OS, GPU, GPU driver version. Tip: you can copy and paste the system information from the "System Info" dialog of Expresii here.
+      placeholder: Please provide information of your OS, GPU, GPU driver version. Tip - you can copy and paste the system information from the "System Info" dialog of Expresii here.
     validations:
       required: false    
       
